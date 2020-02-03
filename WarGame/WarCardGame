@@ -1,0 +1,30 @@
+ArrayList Project
+
+
+Card
+-rank
+-suit
+-value
+-getRank()
+-getSuit()
+
+Card(rank, value, suit)
+toString()
+
+Deck<card>
+-deal()
+-shuffle()
+-play()
+-toString()
+
+WarGame
+-#players
+-toString()
+
+tester
+-main()
+
+2pts EC
+-2 <= Variable # of players <= 10
+-user input
+-javadocs
