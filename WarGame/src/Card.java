@@ -12,4 +12,9 @@ public class Card {
     public int getRank() {
         return rank;
     }
+
+    public String getSuit() {
+        return suit;
+    }
+
 }
