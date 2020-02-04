@@ -3,7 +3,12 @@ import java.util.Collections;
 
 public class Deck extends ArrayList<Card> {
 
-    private ArrayList<Card> deck = new ArrayList<Card>();
+    private int player;
+    private ArrayList<Card> deck = new ArrayList<>();
+
+    public Deck(int player) {
+        this.player = player;
+    }
 
     public Deck() {
 
@@ -24,11 +29,15 @@ public class Deck extends ArrayList<Card> {
         }
     }
 
+    public int getPlayer() {
+        return player;
+    }
+
     public void shuffle() {
         Collections.shuffle(deck);
     }
 
-    public void deal(Deck[] playerDecks) {
+    public void deal(ArrayList<Deck> playerDecks) {
         //TODO refactor deal logic somewhere else, just keep function
         while (!deck.isEmpty()) {
             for (Deck d : playerDecks) {
