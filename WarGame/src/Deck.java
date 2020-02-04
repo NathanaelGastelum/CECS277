@@ -49,9 +49,24 @@ public class Deck extends ArrayList<Card> {
     }
 
     public Card play() {
-        System.out.println("Player " + player + " " + this.size());
+        if (this.size() == 0) return null;
         Card topCard = this.get(0);
         this.remove(0);
+
+        int n = topCard.getRank();
+        String face = Integer.toString(n);
+        switch (n) {
+            case 11: face = "Jack";
+            break;
+            case 12: face = "Queen";
+            break;
+            case 13: face = "King";
+            break;
+            case 14: face = "Ace";
+            break;
+        }
+
+        System.out.println(face + " of " + topCard.getSuit());
         return topCard;
     }
 }
