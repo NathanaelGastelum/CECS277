@@ -39,9 +39,9 @@ public class Deck extends ArrayList<Card> {
     }
 
     public void deal(ArrayList<Deck> playerDecks) {
-        //TODO refactor deal logic somewhere else, just keep function
         while (!deck.isEmpty()) {
             for (Deck d : playerDecks) {
+                if (deck.size() == 0) return;
                 d.add(deck.get(0));
                 deck.remove(0);
             }

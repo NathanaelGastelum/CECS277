@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         //TODO allow user selected playerCounts
-        int playerCount = 2;
+        int playerCount = 5;
 
         Deck gameDeck = new Deck();
         ArrayList<Deck> playerDecks = new ArrayList<>();
@@ -35,17 +35,18 @@ public class Main {
                 }
                 if (roundWinner.size() > 1){
                     //TODO warRound()
+                    /*Decks of 5 cards
+                    * each tied player .play()s into their arraylist
+                    * each of the warDecks plays one at a time into a new gameRound()*/
                 }
 
                 // give all round cards to roundWinner
                 playerDecks.get(roundWinner.get(0)).addAll(round);
                 round.clear();
             }
-            for (int i = 0; i < playerDecks.size(); i++) {
-                if (playerDecks.get(i).size() <= 0) {
-                    playerDecks.remove(i);
-                }
-            }
+
+            playerDecks.removeIf(i -> i.size() <= 0);
+
             // win condition
             if (playerDecks.size() == 1){
                 win = true;
