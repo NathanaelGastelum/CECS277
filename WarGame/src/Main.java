@@ -40,13 +40,18 @@ public class Main {
                 // give all round cards to roundWinner
                 playerDecks.get(roundWinner.get(0)).addAll(round);
                 round.clear();
-
-                // win condition
-                if (playerDecks.size() == 1){
-                    win = true;
+            }
+            for (int i = 0; i < playerDecks.size(); i++) {
+                if (playerDecks.get(i).size() <= 0) {
+                    playerDecks.remove(i);
                 }
             }
-            System.out.println("Player " + playerDecks.get(0).getPlayer() + " is the winner!");
+            // win condition
+            if (playerDecks.size() == 1){
+                win = true;
+            }
         }
+
+        System.out.println("Player " + playerDecks.get(0).getPlayer() + " is the winner!");
     }
 }

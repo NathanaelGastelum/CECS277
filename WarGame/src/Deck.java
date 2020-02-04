@@ -4,14 +4,15 @@ import java.util.Collections;
 public class Deck extends ArrayList<Card> {
 
     private int player;
-    private ArrayList<Card> deck = new ArrayList<>();
+    private ArrayList<Card> deck;
+
+    public Deck() {
+        this(0);
+    }
 
     public Deck(int player) {
         this.player = player;
-    }
-
-    public Deck() {
-
+        deck = new ArrayList<>();
     }
 
     public void generateDeck() {
@@ -48,8 +49,9 @@ public class Deck extends ArrayList<Card> {
     }
 
     public Card play() {
-        Card topCard = deck.get(0);
-        deck.remove(0);
+        System.out.println("Player " + player + " " + this.size());
+        Card topCard = this.get(0);
+        this.remove(0);
         return topCard;
     }
 }
