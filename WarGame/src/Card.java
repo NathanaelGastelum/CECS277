@@ -16,4 +16,20 @@ public class Card {
         return suit;
     }
 
+    public String toString() {
+        int n = rank;
+        String face = Integer.toString(n);
+        switch (n) {
+            case 11: face = "Jack";
+                break;
+            case 12: face = "Queen";
+                break;
+            case 13: face = "King";
+                break;
+            case 14: face = "Ace";
+                break;
+        }
+        return face + " of " + suit;
+    }
+
 }

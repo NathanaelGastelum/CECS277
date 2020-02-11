@@ -17,16 +17,16 @@ public class Deck extends ArrayList<Card> {
 
     public void generateDeck() {
         for (int i=2; i < 15; i++) {
-            deck.add(new Card(i, "spades"));
+            deck.add(new Card(i, "Spades"));
         }
         for (int i=2; i < 15; i++) {
-            deck.add(new Card(i, "clubs"));
+            deck.add(new Card(i, "Clubs"));
         }
         for (int i=2; i < 15; i++) {
-            deck.add(new Card(i, "hearts"));
+            deck.add(new Card(i, "Hearts"));
         }
         for (int i=2; i < 15; i++) {
-            deck.add(new Card(i, "diamonds"));
+            deck.add(new Card(i, "Diamonds"));
         }
     }
 
@@ -53,20 +53,6 @@ public class Deck extends ArrayList<Card> {
         Card topCard = this.get(0);
         this.remove(0);
 
-        int n = topCard.getRank();
-        String face = Integer.toString(n);
-        switch (n) {
-            case 11: face = "Jack";
-            break;
-            case 12: face = "Queen";
-            break;
-            case 13: face = "King";
-            break;
-            case 14: face = "Ace";
-            break;
-        }
-
-        System.out.println(face + " of " + topCard.getSuit());
         return topCard;
     }
 }

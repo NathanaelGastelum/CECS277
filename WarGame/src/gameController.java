@@ -12,8 +12,9 @@ public class gameController {
         // Game loop
         while (!win) {
             for (Deck d : playerDecks) {
-                System.out.print("Player " + d.getPlayer() + " plays ");
-                round.add(d.play());
+                Card nextCard = d.play();
+                System.out.println("Player " + d.getPlayer() + " plays " + nextCard.toString());
+                round.add(nextCard);
             }
 
             // return the index of the highest ranked cards
@@ -30,7 +31,11 @@ public class gameController {
             }
 
             // give all round cards to roundWinner
-            playerDecks.get(roundWinner.get(0)).addAll(round);
+            for (Deck d : playerDecks) {
+                if (d.getPlayer() == roundWinner.get(0)) {
+                    d.addAll(round);
+                }
+            }
             System.out.println("Player " + roundWinner.get(0) + " wins the round\n");
             round.clear();
 
@@ -52,16 +57,19 @@ public class gameController {
         ArrayList<Deck> warDecks = new ArrayList<>();
         for (Integer player : roundWinner) {
             warDecks.add(new Deck(player));
-            for (Deck wD : playerDecks) {
-                if (wD.getPlayer() == player) {
-                    for (int i=0; i < 5; i++) {
-                        if (wD.play() == null) break;
-                        warDecks.get(i).add(wD.play());
+            for (Deck d : playerDecks) {
+                if (d.getPlayer() == player) {
+                    for (Deck wD : warDecks) {
+                        for (int i=0; i < 5; i++) {
+                            Card nextCard = d.play();
+                            if (nextCard == null) break;
+                            wD.add(nextCard);
+                        }
                     }
                 }
             }
         }
-        //TODO Player loss text
+        // Player loss text
         for (Deck wD : warDecks) {
             if (wD.size() < 5) {
                 System.out.println("Player " + wD.getPlayer() + " has ran out of cards");
