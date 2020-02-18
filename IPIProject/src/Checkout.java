@@ -40,16 +40,17 @@ public class Checkout {
         return subTotal() + tax();
     }
 
+    @Override
     public String toString() {
         String receipt = "";
 
         for (DessertItem i : cart) {
-            receipt.concat(i.name +"    "+ i.getCost() + "\n");
+            receipt = receipt.concat(i.name +"    "+ i.getCost() + "\n");
         }
 
-        receipt.concat(Double.toString(subTotal()) + "\n");
-        receipt.concat(Double.toString(tax()) + "\n");
-        receipt.concat(Double.toString(total()) + "\n");
+        receipt = receipt.concat(subTotal() + "\n");
+        receipt = receipt.concat(tax() + "\n");
+        receipt = receipt.concat(total() + "\n");
 
         return receipt;
     }
