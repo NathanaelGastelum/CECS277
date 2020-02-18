@@ -11,33 +11,16 @@ public class Checkout {
         taxRate = .1025;
     }
 
-    public void addToCart(DessertItem item) {
-        cart.add(item);
-    }
-
-    public void clearCart() {
+    public void clear() {
         cart.clear();
     }
 
-    public int getSize(){
+    public void enterItem(DessertItem item) {
+        cart.add(item);
+    }
+
+    public int numberOfItems(){
         return cart.size();
-    }
-
-    public double subTotal() {
-        double subTotal = 0;
-
-        for (DessertItem i : cart) {
-            subTotal = subTotal + i.getCost();
-        }
-        return subTotal/100;
-    }
-
-    public double tax() {
-        return round(taxRate * subTotal() * 100.00)/100.00;
-    }
-
-    public double total() {
-        return subTotal() + tax();
     }
 
     @Override
@@ -45,13 +28,26 @@ public class Checkout {
         String receipt = "";
 
         for (DessertItem i : cart) {
-            receipt = receipt.concat(i.name +"    "+ i.getCost() + "\n");
+            receipt = receipt.concat(i.name +"         "+ i.getCost() + "\n");
         }
 
-        receipt = receipt.concat(subTotal() + "\n");
-        receipt = receipt.concat(tax() + "\n");
-        receipt = receipt.concat(total() + "\n");
+        receipt += "SubTotal: " + totalCost()/100.00 + "\n";
+        receipt += "Tax: " + totalTax()/100.00 + "\n";
+        receipt += "Total: " + ((totalCost() + totalTax())/100.00) + "\n";
 
         return receipt;
+    }
+
+    public int totalCost() {
+        double subTotal = 0;
+
+        for (DessertItem i : cart) {
+            subTotal += i.getCost();
+        }
+        return (int)subTotal;
+    }
+
+    public long totalTax() {
+        return round(taxRate * totalCost());
     }
 }
