@@ -1,0 +1,14 @@
+Franklin
+Information Systems
+15 Units
+Tuition is $3750
+
+Hamilton
+Computer Science
+13 Units
+Tuition is $6500
+
+Jason
+English
+12 Units
+Tuition is $9000
