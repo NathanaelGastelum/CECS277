@@ -1,0 +1,4 @@
+Bill;Conference;0.67;03/17/2020
+Jack;Conference;0.67;03/17/2020
+Bill;Conference;0.67;03/17/2020
+Jack;Conference;0.67;03/17/2020
