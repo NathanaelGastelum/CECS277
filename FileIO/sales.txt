@@ -1,4 +1,3 @@
-Bob;Dinner;600.00;03/17/2020
-Bill;Conference;0.67;03/17/2020
-Anne;Dinner;600.00;03/17/2020
-Jack;Conference;0.67;03/17/2020
+John Public;Dinner;29.95;6/7/2014
+Jane Public;Conference;499.00;8/9/2014
+Abby Lawrence;Dinner;23.45;10/10/2014
