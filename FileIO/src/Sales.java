@@ -14,20 +14,28 @@ public class Sales {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        String input = "";
+        StringBuilder input = new StringBuilder();
 
         // Take the user input until they decide to move on
         while (true) {
             System.out.println("Please enter sale, use q to quit ");
             String next = in.nextLine();
+
             if (next.equals("q") || next.equals("Q")) break;
-            input += next + "\n";
+
+            // Validate input
+            String[] nextArray = next.split(";");
+            if (nextArray.length != 4) {
+                System.out.println("Unknown transaction");
+            }else {
+                input.append(next).append("\n");
+            }
         }
 
         // Generate sales.txt file from user input
         try {
             FileWriter output = new FileWriter("sales.txt", true);
-            output.write(input);
+            output.write(input.toString());
             output.close();
         } catch (IOException e) {
             System.out.println("Unable to write to file");
