@@ -1,2 +1,1 @@
-Jane Public;Conference;499.00;8/9/2014
-Jane Public;Conference;499.00;8/9/2014
+John Doe;Conference;499.00;8/9/2014

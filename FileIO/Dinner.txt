@@ -1,4 +1,2 @@
-John Public;Dinner;29.95;6/7/2014
-Abby Lawrence;Dinner;23.45;10/10/2014
-John Public;Dinner;29.95;6/7/2014
-Abby Lawrence;Dinner;23.45;10/10/2014
+Bob;Dinner;29.95;6/7/2014
+Jane Doe;Dinner;23.45;10/10/2020

@@ -24,19 +24,19 @@ public class Sales {
             if (next.equals("q") || next.equals("Q")) break;
 
             // Validate input
-            String[] nextArray = next.split(";");
-            if (nextArray.length != 4) {
-                System.out.println("Unknown transaction");
-            }else {
+            try {
+                if (next.split(";").length != 4) {
+                    throw new UnknownTransactionException("Unknown transaction");
+                }
                 input.append(next).append("\n");
+            } catch (UnknownTransactionException e) {
+                System.out.println(e.getMessage());
             }
         }
 
         // Generate sales.txt file from user input
-        try {
-            FileWriter output = new FileWriter("sales.txt", true);
+        try (FileWriter output = new FileWriter("sales.txt", true)){
             output.write(input.toString());
-            output.close();
         } catch (IOException e) {
             System.out.println("Unable to write to file");
         }

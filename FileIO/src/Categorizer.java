@@ -50,10 +50,8 @@ public class Categorizer {
 
             String outFilePath = outStrings[1] + ".txt";
 
-            try {
-                FileWriter output = new FileWriter(outFilePath, true);
+            try (FileWriter output = new FileWriter(outFilePath, true)) {
                 output.write(outString + "\n");
-                output.close();
             } catch (IOException e) {
                 System.out.println("Unable to write to file");
             }
