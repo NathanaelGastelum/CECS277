@@ -1,3 +1,4 @@
+import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
@@ -16,16 +17,23 @@ public class TreeTest {
       Print Qword TreeMap
       Print search time
     */
+    // Load Keys into TreeMap
     public void load (String filePath) {
         Scanner s = new Scanner(filePath);
-        TreeMap qWords = new TreeMap();
+        TreeMap<String, Integer> qWords = new TreeMap();
 
         while (s.hasNextLine()) {
             qWords.put(s.nextLine(), null);
         }
     }
 
-    public void score (TreeMap words, TreeMap scores) {
-        words.forEach( );
+    // Calculate score Value based on Key name in TreeMap
+    public void score (TreeMap<String, Integer> words, TreeMap<Character, Integer> scores) {
+        for(Map.Entry<String, Integer> entry : words.entrySet()) {
+            int sum = 0;
+            for (char c : entry.getKey().toCharArray()) {
+                sum += scores.get(c);
+            }
+        }
     }
 }
