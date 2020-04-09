@@ -1,0 +1,100 @@
+shoe
+key
+newspaper
+plastic bag
+paper bag
+coin
+foreign currency
+rose
+daisy
+dandelion
+shoelace
+pencil
+pen
+needles
+stolen bike parts
+dollar bills
+empty bottles
+bottle cap
+paper clip
+receipt
+candy
+cigarette butts
+hubcap
+car tire
+bike tire
+bike lock
+stripped bike frame locked to bike rack
+mattress
+couch
+free furniture
+corn
+apples
+limes
+lemons
+oranges
+strawberries
+tamales
+hat
+sweater
+sunglasses
+watch
+bracelet
+jewelry
+tv remote
+wallet
+keychain
+butterfly
+birds nest
+beehive
+spiderweb
+big spider
+jumping spider
+toilet paper
+hand sanitizer
+nintendo switch
+mask
+gloves
+dragonfly
+hummingbird
+roly poly
+bees
+cat
+kitten
+dog
+puppy
+tortoise
+peacock
+hawk
+lizard
+japanese beetle
+cockroach
+bunny
+coyote
+skunk
+possum
+raccoon
+succulent
+herb garden
+toyota mr2
+wreath
+mulch
+starbucks cup
+shopping cart
+movie tickets
+bus stop
+burnt trash can
+murder weapon
+standing up electric scooter
+tipped over electric scooter
+broken electric scooter
+oddly placed electric scooter
+porsche 944
+vw beetle
+golfcourse
+golfball
+vw bus
+miata
+pre 1973 porsche 911
+pool noodle
+free tv

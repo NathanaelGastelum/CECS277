@@ -1,0 +1,131 @@
+Part 2:
+
+Using TreeMap
+Time for loading into Map 20952471 nano-seconds
+qabala --> 17
+qabalah --> 21
+qabalahs --> 22
+qabalas --> 18
+qadi --> 14
+qadis --> 15
+qaid --> 14
+qaids --> 15
+qanat --> 14
+qanats --> 15
+qat --> 12
+qats --> 13
+qi --> 11
+qindar --> 16
+qindarka --> 22
+qindars --> 17
+qintar --> 15
+qintars --> 16
+qis --> 12
+qiviut --> 18
+qiviuts --> 19
+qoph --> 18
+qophs --> 19
+qwerty --> 21
+qwertys --> 22
+Time for searching Map 563933 nano-seconds
+
+Using HashMap
+Time for loading into Map 20547910 nano-seconds
+qintar --> 15
+qwerty --> 21
+qaids --> 15
+qintars --> 16
+qabalas --> 18
+qi --> 11
+qis --> 12
+qadis --> 15
+qabala --> 17
+qabalah --> 21
+qanats --> 15
+qindars --> 17
+qaid --> 14
+qadi --> 14
+qindarka --> 22
+qoph --> 18
+qat --> 12
+qabalahs --> 22
+qwertys --> 22
+qindar --> 16
+qophs --> 19
+qiviuts --> 19
+qanat --> 14
+qiviut --> 18
+qats --> 13
+Time for searching Map 282822 nano-seconds
+
+//----------------------------------------------------------------------------------------
+
+Part 2:
+
+Elapsed time for loading TreeSet: 72 milliseconds
+Elapsed time for searching TreeSet: 236065 nanoseconds
+
+Elapsed time for loading HashSet: 60 milliseconds
+Elapsed time for searching HashSet: 13970 nanoseconds
+
+//----------------------------------------------------------------------------------------
+
+Part 3:
+
+Elapsed time for loading ArrayList: 4667984 nanoseconds
+How many groups?
+7
+Which element do you want to work with. Enter a number between 1 and 100)
+25
+The things are:
+coin
+limes
+butterfly
+newspaper
+couch
+free furniture
+big spider
+
+The random things are:
+vw beetle
+car tire
+shoelace
+starbucks cup
+coin
+bike tire
+birds nest
+
+Time to loop through ArrayList: 167640
+Time to create groups: 861580
+Time to retrieve user index: 261154
+Time to insert at user index: 27085
+Time to retrieve random index: 118317
+//----------------------------------------------------------------------------------------
+Elapsed time for loading LinkedList: 5249593 nanoseconds
+How many groups?
+7
+Which element do you want to work with. Enter a number between 1 and 100)
+25
+The things are:
+stolen bike parts
+plastic bag
+herb garden
+sunglasses
+toyota mr2
+cigarette butts
+hummingbird
+
+The random things are:
+tv remote
+apples
+candy
+golfball
+oranges
+rose
+hawk
+
+Time to loop through LinkedList: 168210
+Time to create groups: 912043
+Time to retrieve user index: 230648
+Time to insert at user index: 17677
+Time to retrieve random index: 191304

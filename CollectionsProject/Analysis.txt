@@ -1,0 +1,13 @@
+Part 1:
+TreeMaps and HashMaps had comparable loading times, but the HashMap was significantly faster when searching.
+
+The HashMap was sometimes almost twice as fast as the TreeMap for searching, and should definitely be used in those situations when doing a lot of searching assuming performance is a concern.
+
+Part 2:
+
+The HashSet had generally better loading times, but excelled when searching by consistently being around 15 times faster. Using a HashSet over a TreeSet in a search heavy program would be a significant performance improvement.
+
+Part 3:
+The main I noticed in timing tasks for both types of lists is that retrieval times seem to vary wildly, and strangely the random index seems to usually be faster than the user selected index.
+
+Linked lists seem to consistently be more efficient for inserting an element into the list, while ArrayLists seem to generally be slightly faster at loading elements and iterating over, but not as consistently.
