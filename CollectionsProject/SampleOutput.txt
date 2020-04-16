@@ -1,4 +1,4 @@
-Part 2:
+Part 1:
 
 Using TreeMap
 Time for loading into Map 20952471 nano-seconds
