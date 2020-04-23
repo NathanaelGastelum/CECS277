@@ -1,0 +1,19 @@
+The latest trade is Trader: Jacob buy $2363.49 Stock: AMZN
+The latest trade is Trader: Jacob sell $732.11 Stock: TSLA
+The latest trade is Trader: Jacob sell $732.11 Stock: TSLA
+The latest trade is Trader: Jacob sell $732.11 Stock: TSLA
+The latest trade is Trader: Westley buy $55.92 Stock: AMD
+The latest trade is Trader: Westley buy $55.92 Stock: AMD
+
+The latest trade is Trader: Jacob buy $2000.0 Stock: AMZN
+The latest trade is Trader: Jordan sell $500.0 Stock: TSLA
+The latest trade is Trader: Jordan sell $500.0 Stock: TSLA
+The latest trade is Trader: Jordan buy $43.91 Stock: MU
+The latest trade is Trader: Jordan buy $43.91 Stock: MU
+The latest trade is Trader: Jordan sell $50.0 Stock: AMD
+The latest trade is Trader: Jordan sell $50.0 Stock: AMD
+
+The latest trade is Trader: Jacob sell $3000.0 Stock: AMZN
+The latest trade is Trader: Jacob sell $800.0 Stock: TSLA
+The latest trade is Trader: Jacob sell $3000.0 Stock: MU
+The latest trade is Trader: Jacob sell $800.0 Stock: AMD
