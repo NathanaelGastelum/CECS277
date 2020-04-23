@@ -1,14 +1,14 @@
 /*
  * Zoo.java
  *
- * This manages an auction whereby listeners register themselves
+ * This manages a zoo whereby listeners register themselves
  * and  are notified when an animal is added.
  */
 
 import java.util.ArrayList;
 
 public class Zoo implements ZooSubject {
-    private ArrayList<AnimalAddedListener> listeners;
+    public ArrayList<AnimalAddedListener> listeners;
     private Animal animal;
 
     public Zoo() {
@@ -22,13 +22,12 @@ public class Zoo implements ZooSubject {
 
     /* remove a registered observer */
     public void unregisterAnimalAddedListener(AnimalAddedListener o) {
-        listeners.remove(0);
+        listeners.remove(listeners.indexOf(o));
     }
 
     /* notify all registered observers */
     public void notifyAnimalAddedListener() {
-        for (int i = 0; i < listeners.size(); i++) {
-            AnimalAddedListener listen = listeners.get(i);
+        for (AnimalAddedListener listen : listeners) {
             listen.update(animal);
         }
     }
