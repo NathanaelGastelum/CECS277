@@ -1,0 +1,31 @@
+Classes:
+
+RoachMotel (manages rooms, check in, and checkout/payment)
+MotelRoom (with subclasses for each room type)
+Amenities decorator
+RoachColony
+
+
+Design Patterns:
+
+Motel - singleton
+Rooms - factory
+amenities - decorator
+payments - strategy
+
+Features:
+
+Motel:
+Set number of rooms
+track vacancy, can't check in if no vacancy
+
+Roach Colony:
+name, initial pop, growth rate
+Throw Parties (growth rate)
+insecticide
+
+Payments:
+3 base room types
+4 amenities
+bill = days at motel * total rate
+2 payment methods
